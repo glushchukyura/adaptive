@@ -23,7 +23,7 @@
   </head>
   <body>
     <!----------------HEADER PART--------------------->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__wrap">
         <a class="logo logo--position link" href="./index.html"
           ><span class="logo__web-element">Web</span
@@ -72,7 +72,7 @@
           </ul>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <!----------------MAIN CONTENT---------------------->
     <main>
@@ -180,11 +180,34 @@
           <h2 class="team__title team__title--position">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item--position">
-              <img
-                src="./img/member-demyanenko.jpg"
-                alt="Портрет Ігора Дем'яненка"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/member-demyanenko.jpg        1x,
+                    ./img/member-demyanenko-dsc-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/member-demyanenko-tab-1x.jpg 1x,
+                    ./img/member-demyanenko-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/member-demyanenko-mob-1x.jpg 1x,
+                    ./img/member-demyanenko-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/member-demyanenko.jpg"
+                  alt="Портрет Ігора Дем'яненка"
+                  width="450"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__member-title">Product Designer</p>
@@ -225,11 +248,34 @@
               </div>
             </li>
             <li class="team__item--position">
-              <img
-                src="./img/member-repina.jpg"
-                alt="Портрет Ольги Рєпіної"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/member-repina.jpg        1x,
+                    ./img/member-repina-dsc-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/member-repina-tab-1x.jpg 1x,
+                    ./img/member-repina-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/member-repina-mob-1x.jpg 1x,
+                    ./img/member-repina-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/member-repina.jpg"
+                  alt="Портрет Ольги Рєпіної"
+                  width="450"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__member-title">Frontend Developer</p>
@@ -270,11 +316,34 @@
               </div>
             </li>
             <li class="team__item--position">
-              <img
-                src="./img/member-tarasov.jpg"
-                alt="Портрет Миколи Тарасова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/member-tarasov.jpg        1x,
+                    ./img/member-tarasov-dsc-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/member-tarasov-tab-1x.jpg 1x,
+                    ./img/member-tarasov-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/member-tarasov-mob-1x.jpg 1x,
+                    ./img/member-tarasov-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/member-tarasov.jpg"
+                  alt="Портрет Миколи Тарасова"
+                  width="450"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__member-title">Marketing</p>
@@ -315,11 +384,34 @@
               </div>
             </li>
             <li class="team__item--position">
-              <img
-                src="./img/member-yermakov.jpg"
-                alt="Портрет Михайла Єрмакова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/member-yermakov.jpg        1x,
+                    ./img/member-yermakov-dsc-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/member-yermakov-tab-1x.jpg 1x,
+                    ./img/member-yermakov-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/member-yermakov-mob-1x.jpg 1x,
+                    ./img/member-yermakov-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/member-yermakov.jpg"
+                  alt="Портрет Михайла Єрмакова"
+                  width="450"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__member-title">UI Designer</p>
@@ -614,5 +706,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

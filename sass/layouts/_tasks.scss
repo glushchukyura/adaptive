@@ -1,15 +1,8 @@
 .tasks {
-    padding-bottom: 94px;
-
-    @include mobile {
-        padding-bottom: 60px;
-    }
-
-    @include tablet {
-        padding-bottom: 60px;
-    }
+    display: none;
 
     @include desktop {
+        display: block;
         padding-bottom: 94px;
     }
 }
