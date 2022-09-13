@@ -1,28 +1,36 @@
-.header__wrap {
-    display: flex;
-    align-items: center;
-}
-
 .header {
     background: #FFFFFF;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ececec;
 
     @include mobile {
-            padding-top: 16px;
-            padding-bottom: 16px;
-        }
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @include tablet {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @include desktop {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: relative;
     
     @include tablet {
-            padding-top: 26px;
-            padding-bottom: 26px;
+        justify-content: baseline;
+
     }
-    
-    @include desktop {
-            padding-top: 24px;
-            padding-bottom: 25px;
-    }
+
 }
 
 .navigation {
@@ -30,6 +38,18 @@
     display: flex;
     align-items: center;
     display: none;
+
+    @include mobile {
+            display: none;
+        }
+    
+    @include tablet {
+            display: flex;
+    }
+    
+    @include desktop {
+            display: flex;
+    }
 }
 
 .navigation__list {
@@ -83,27 +103,60 @@
 
 .connection {
     display: none;
+
+    @include mobile {
+            display: none;
+        }
+    
+    @include tablet {
+            display: flex;
+    }
+    
+    @include desktop {
+            display: flex;
+    }
 }
 
 .connection--position {
     margin-left: auto;
+    // justify-content: center;
+    // flex-direction: column;
+    // gap: 10px;
 }
 
 .connection__list {
     display: flex;
-    align-items: center;
-    margin-left: auto;
+    // align-items: center;
+    
+
+    @include tablet {
+        flex-direction: column;
+        align-items:baseline;
+        gap: 10px;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        gap: 0;
+    }
 }
 
 .connection__item {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
 
-    &:first-child {
-        margin-right: 50px;
+    @include tablet {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    @include desktop {
+        font-size: 14px;
+        
+                margin-right: 20px;
     }
 }
 
